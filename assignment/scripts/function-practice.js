@@ -27,9 +27,10 @@ function addNumbers( firstNumber, secondNumber ) {
 addNumbers(348,1200)
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree( firstNumber, secondNumber, thirdNumber){
+    console.log(firstNumber * secondNumber * thirdNumber)
 }
+multiplyThree(1,2,3)
 
 
 // 5. Function that will return true if a number is positive, 
