@@ -61,16 +61,42 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
+let newArray = [8, 9, 23 ,46 , 75];
+let testArray =[]
 function getLast( array ) {
+  if (array.length === 0) {
+    return console.log(undefined);
+  } 
+    return console.log(array[array.length - 1]);
+  }
 
-}
+//getLast(newArray)
+//getLast(testArray)
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
+let theArray = [12, 8, 75, 13]
+function findValue( value, array ){
+  let i = 0;
+  while (i < array.length) {
+    if (array[i] === value) {
+      return true;
+    }
+    i++;
+  }
+  return false;
 }
+
+// i couldnt figure it out doing any other loop
+
+  console.log(findValue(75, theArray));
+  console.log(findValue(24, theArray));
+
+    //if (value === 0) 
+    //return false;
+    //else (value )
+
 
 // ----------------------
 // Stretch Goals
@@ -98,4 +124,4 @@ function sumAll( ) {
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
 //     CodeWars(https://www.codewars.com/). Then describe it 
-//     here in a comment, write the function, and test it!
+//     here in a comment, write the function, and test i
